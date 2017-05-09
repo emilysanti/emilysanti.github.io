@@ -1,0 +1,81 @@
+---
+html_id: assessments
+style: 1
+size: medium
+onload: fade-in
+---
+<section class="wrapper style1 align-center" id="{{ page.html_id }}">
+  <div class="inner">
+    <h2>Educational Assessments</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+    {% assign content = "" | split: "" %}
+
+      {% capture x %}
+        <span class="icon style2 major fa-book"></span>
+        <h3>Reading - Dyslexia</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+      {% endcapture %}
+      {% assign content = content | push: x %}
+
+      {% capture x %}
+        <span class="icon style2 major fa-pencil"></span>
+        <h3>Writing - Dysgraphia</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+      {% endcapture %}
+      {% assign content = content | push: x %}
+
+      {% capture x %}
+        <span class="icon style2 major fa-calculator"></span>
+        <h3>Math - Dyscalculia</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+      {% endcapture %}
+      {% assign content = content | push: x %}
+
+      {% capture x %}
+        <span class="icon style2 major fa-check-square-o"></span>
+        <h3>Short &amp; Long Term Memory</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+      {% endcapture %}
+      {% assign content = content | push: x %}
+
+      {% capture x %}
+        <span class="icon style2 major fa-exclamation-triangle"></span>
+        <h3>Attention &amp; Concentration - ADD or ADHD</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+      {% endcapture %}
+      {% assign content = content | push: x %}
+
+      {% capture x %}
+        <span class="icon style2 major fa-paper-plane"></span>
+        <h3>Nonverbal Learning Disability</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+      {% endcapture %}
+      {% assign content = content | push: x %}
+
+      {% capture x %}
+        <span class="icon style2 major fa-share-alt"></span>
+        <h3>Social Skills</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+      {% endcapture %}
+      {% assign content = content | push: x %}
+
+      {% capture x %}
+        <span class="icon style2 major fa-user"></span>
+        <h3>Emotional Development</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+      {% endcapture %}
+      {% assign content = content | push: x %}
+
+      {% capture x %}
+        <span class="icon style2 major fa-puzzle-piece"></span>
+        <h3>Executive Functioning</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+      {% endcapture %}
+      {% assign content = content | push: x %}
+
+    {% include components/items.html
+      settings=page
+      items=content
+    %}
+  </div>
+</section>

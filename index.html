@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{% for section in site.sections %}
+  {% case section.type %}
+    {% when 'banner' %}
+      {% include components/banner.html
+        settings=section
+        content=section.content
+        id=section.html_id
+        image=section.image
+        image_position=section.image_position
+      %}
+    {% when 'spotlight' %}
+      {% include components/spotlight.html
+        settings=section
+        content=section.content
+        id=section.html_id
+        image=section.image
+        image_position=section.image_position
+      %}
+    {% else %}
+      {{ section.content }}
+  {% endcase %}
+{% endfor %}

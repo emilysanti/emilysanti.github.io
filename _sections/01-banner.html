@@ -1,0 +1,24 @@
+---
+type: banner
+style: 3
+invert: true
+color: 1
+fullscreen: true
+image: images/banner.jpg
+image_position: right
+orient: left
+content_align: left
+onload_image: fade-in
+onload_content: fade-right
+---
+<h4><img src="images/logo-{% if page.invert == true %}white{% else %}black{% endif %}.svg" alt="" class="logo" />{{ site.title }}</h4>
+<h1>Helping kids reach their full potential</h1>
+<p class="major">Eductional psychology services, including IQ
+testing, for children and families in the San Francisco Bay Area.</p>
+<ul class="actions vertical">
+  <li><a href="#assessments" class="button fit smooth-scroll">IQ &amp; Educational Assessments</a></li>
+  <li><a href="#training" class="button fit smooth-scroll">Training &amp; Consultation</a></li>
+  <li><a href="#fees" class="button fit smooth-scroll">Testing Fees</a></li>
+  <li><a href="#about" class="button fit smooth-scroll">About Emily</a></li>
+</ul>
+{% include components/social.html %}

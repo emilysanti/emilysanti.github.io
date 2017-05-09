@@ -1,0 +1,23 @@
+# Site settings
+title: Emily Santiago, LEP, NCSP
+description: > # this means to ignore newlines until "baseurl:"
+  Emily Santiago is a licensed educational psychologist, helping kids reach
+  their full potential.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://emilysanti.com" # the base hostname & protocol for your site
+twitter_username: emilysanti8
+facebook_username: emilysantiagolep
+linkedin_username: emilysantiago
+medium_username: emilysanti
+telephone: 1-510-473-5365
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+collections:
+  - sections
