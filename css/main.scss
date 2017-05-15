@@ -198,6 +198,20 @@
     }
   }
 
+  #consultation {
+    .image {
+      max-width: 30%;
+    }
+    @include breakpoint(small) {
+      @include orientation(portrait) {
+          .image {
+            height: 100px;
+            max-width: 100%;
+          }
+      }
+    }
+  }
+
   #fees {
     .image {
       max-width: 30%;
