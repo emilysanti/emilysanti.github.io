@@ -367,6 +367,8 @@
                         window.location.hash = (hash);
                     }
                     currentHash = hash;
+                    ga('set', 'page', location.pathname + location.search + hash);
+                    ga('send', 'pageview');
                 }
             });
         });
