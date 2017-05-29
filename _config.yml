@@ -4,7 +4,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Emily Santiago is a licensed educational psychologist, helping kids reach
   their full potential.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://emilysanti.com" # the base hostname & protocol for your site
+url: "https://emilyhelpskids.com" # the base hostname & protocol for your site
 twitter_username:
 facebook_username: emilysantiagolep
 linkedin_username: emilysantiago
