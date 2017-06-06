@@ -1,12 +1,19 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>{{ site.title }}</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="google-site-verification" content="U8MZxqawt8He3cFJFnE_DoKr5NoiiclIKsI9TuxNVhA" />
+
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ site.title }}" />
+    <meta name="twitter:image" content="{{ site.baseurl | absolute_url }}/images/banner.jpg" />
+    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+
     <link rel="canonical" href="{{ page.url | replace:'index.html', '' | absolute_url }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-site-verification" content="U8MZxqawt8He3cFJFnE_DoKr5NoiiclIKsI9TuxNVhA" />
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.baseurl }}/images/logo-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/images/logo-114x114.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/images/logo-72x72.png" />
