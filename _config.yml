@@ -1,8 +1,8 @@
 # Site settings
-title: EmilyHelpsKids
-tagline: Helping kids reach their full potential
+title: Emily Helps Kids
+tagline: Understand. Adapt. Empower. #Helping kids reach their full potential
 description: > # this means to ignore newlines until "baseurl:"
-  Providing educators and schools with training on innovative educational approaches, disabilities and working with cognitive diversity. For families and children in the San Francisco Bay Area, EmilyHelpsKids provides educational psychology services, including IQ testing.
+  Providing educators and schools with training on innovative educational approaches, disabilities, and working with cognitive diversity. For families and children in the San Francisco Bay Area, EmilyHelpsKids provides educational psychology services, including IQ testing and counselling.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://emilyhelpskids.com" # the base hostname & protocol for your site
 twitter_username:
